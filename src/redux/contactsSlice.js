@@ -5,7 +5,7 @@ const INITIAL_STATE = JSON.parse(localStorage.getItem('contacts')) || [];
 
 const contactsSlice = createSlice({
   name: 'contacts',
-  initialState: [],
+  initialState: INITIAL_STATE,
   reducers: {
     addContact: {
       reducer(state, action) {
